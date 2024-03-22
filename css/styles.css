@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+html, body{
+    font-family: "Prata", serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+main, header{
+    background-color: black;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+#menuH{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    flex-wrap: wrap;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+p{
+    font-family: "Source Sans 3", sans-serif;
+    color: #868686;
+}
+
+.botao{
+    background-color: yellow;
+    padding: 15px 25px;
+    color: black;
+    list-style: none;
+}
+
+main{
+    align-items: center;
+}
+
+#herosection{
+    padding: 2rem 6rem;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#herosection h1, #herosection p{
+    width: 60%;
+}
+
+main nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    
+}
+
+#segunda{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2rem;
+    padding: 3rem 0;
+    padding: 2rem 6rem;
+}
+
+.griditem h2{
+    margin: 1rem 0;
+    font-size: 35px;
+}
+
+#cinza{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #3d3a3a;
+    gap: 30px;
+    padding: 2rem 6rem;
+}
+
+.cinza p{
+    margin: 1rem 0;
+}
+
+#cinza h2{
+    font-size: 30px;
+
+}
+
+#ultima{
+    padding: 40px 0;
+    width: 50%;
+    padding: 2rem 6rem;
+}
+
+#ultima h2{
+    font-size: 30px;
+}
+
+#ultima p{
+    padding: 10px 0 0;
+}
+.botao2{
+    background-color: yellow;
+    padding: 15px 25px;
+    color: black;
+    list-style: none;
+}
+
+footer{
+    background-color: #3d3a3a;
+    padding: .5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+
+@media screen and (max-width: 600px) {
+    header nav, .botao {
+        display: none;
+    }
+
+    #herosection p, #herosection h1{
+        width: 100%;
+    }
+
+    #menuH{
+        display: block;
+    }
+
+    header, section, footer{
+        padding: 2rem 1.5rem !important;
+    }
+    #segunda, #cinza{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 1.9rem;
+    }
+    main nav ul{
+        justify-content: center;
+        gap: 1.2rem 1.6rem;
+    }
+    #ultima{
+        width: 100%;
+    }
+    footer nav ul{
+        gap: 1rem;
+    }
+}
+    
+
+
